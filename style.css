@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Faster+One&family=Montserrat:wght@300;400;700;900&display=swap');
+:root {
+    --bodyFont: 'Montserrat', sans-serif;
+    --primaryColor: #272b34;
+    --secondaryColor: #8df48b;
+    --accents: #d85080;
+    --white: #fff;
+    --lightGray: #f1f1f1;
+    --font: 16px;
+    --textShadow: 5px 5px 20px var(--primaryColor);
+    --transition: .3s ease;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: var(--bodyFont);
+    font-size: var(--font);
+    background: var(--primaryColor);
+}
+h1, h2, h3, h4 {
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+h2 {
+    font-size: 3rem;
+}
+
+/* * * * * * * * * * * * * * * * * header * * * * * * * * * * * * * * * * */
+header{
+  background-image: url(img/header.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 70vh;
+  padding: 1rem 0;
+}
+header .navbar-brand{
+  font-family: 'Faster One', cursive;
+  color: var(--primaryColor);
+  font-size: 2rem;
+  padding: 12px 15px;
+  margin: 0;
+  transition: var(--transition);
+}
+header .navbar-brand:hover{
+  background-color: var(--primaryColor);
+  color: var(--secondaryColor) !important;
+}
+header .navbar{
+  background-color: var(--secondaryColor) !important;
+  padding: 0 0 5px 0;
+  justify-content: flex-end;
+}
+header .container-fluid{
+  padding: 0 !important;
+}
+header .nav-link{
+  color: var(--secondaryColor) !important;
+  font-weight: 450;
+  font-size: 1rem;
+  transition: var(--transition);
+}
+header .nav-link:hover{
+  color: var(--white) !important;
+  font-weight: 450;
+  font-size: 1rem;
+}
+header .active{
+  color: var(--white) !important;
+}
+header .navHeight{
+  height: 72px;
+  background-color: var(--primaryColor);
+}
+header .navbar-toggler {
+    margin-right: 20px;
+  }
+header h1{
+  font-size: 6rem;
+  color: var(--secondaryColor);
+  text-shadow: var(--textShadow);
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+/* * * * * * * * * * * * * * * * * O nama * * * * * * * * * * * * * * * * */
+.o_nama {
+  background-color: var(--primaryColor);
+  color: var(--white);
+}
+.o_nama h2{
+  font-size: 3.2rem;
+  font-weight: 1000;
+  letter-spacing: 5px;
+}
+.o_nama h2::after {
+    display: block;
+    content: "";
+    width: 240px;
+    background: var(--secondaryColor);
+    height: 5px;
+    margin: 30px auto;
+}
+/* * * * * * * * * * * * * * * * * Tema * * * * * * * * * * * * * * * * */
+.tema{
+  background-color: var(--secondaryColor);
+  color: var(--primaryColor);
+}
+.tema h2{
+  font-size: 3.2rem;
+  font-weight: 900;
+  letter-spacing: 5px;
+}
+.tema h2::after {
+  display: block;
+  content: "";
+  width: 240px;
+  background: var(--primaryColor);
+  height: 5px;
+  margin: 30px auto;
+}
+.tema h3{
+  font-weight: 900;
+  letter-spacing: 2px;
+  font-size: 1.7rem;
+  padding: 20px 0;
+}
+.tema i{
+  clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+  background-color: var(--primaryColor);
+  color: var(--white);
+  font-size: 2.5rem;
+  line-height: 200px;
+  width: 200px;
+  margin: 0 auto;
+}
+/* * * * * * * * * * * * * * * * * Poziv * * * * * * * * * * * * * * * * */
+.poziv {
+  background-image: linear-gradient(rgba(241,241,241,.8), rgba(241,241,241,.8)), url(img/cta.jpg);
+  background-position: center;
+  background-size: cover;
+  color: var(--primaryColor);
+  padding: 150px 0;
+}
+.poziv h2{
+  font-size: 3.2rem;
+  font-weight: 900;
+  letter-spacing: 5px;
+}
+.poziv h2::after {
+  display: block;
+  content: "";
+  width: 240px;
+  background: var(--accents);
+  height: 5px;
+  margin: 30px auto;
+}
+.poziv .p-green{
+  display: inline;
+  border-radius: 8px;
+}
+.poziv .btn{
+  background-color: var(--accents);
+  font-size: 1.2rem;
+  transition: var(--transition);
+  color: var(--white);
+  margin-top: 35px;
+}
+.poziv .btn:hover{
+  background-color: var(--primaryColor);
+  color: var(--white);
+}
+/* * * * * * * * * * * * * * * * * Footer * * * * * * * * * * * * * * * * */
+footer{
+  background-color: var(--primaryColor);
+  color: var(--white);
+  font-size: 1.2rem;
+}
+footer a{
+  padding: 10px;
+  color: var(--white);
+}
+footer a:hover{
+  text-decoration: none;
+  color: var(--accents);
+}
+/* * * * * * * * * * * * * * * * * Header blog * * * * * * * * * * * * * * * * */
+.headerBlog {
+  background-image: url(img/blog_header.jpg);
+  background-position: center;
+  background-size: cover;
+}
+/* * * * * * * * * * * * * * * * * Blog * * * * * * * * * * * * * * * * */
+.blog{
+  background-color: var(--primaryColor);
+}
+.blog .card-header{
+  padding: 0;
+  border-radius: 60px 0 0 0 !important;
+}
+.blog img{
+  border-radius: 60px 0 0 0 !important;
+}
+.blog .card{
+  background-color: transparent;
+}
+.blog .card-body{
+  background-color: var(--secondaryColor);
+}
+.blog .position-absolute{
+  margin-top: 20px;
+  margin-left: 50px;
+  background-color: var(--secondaryColor);
+  padding: 7px 13px;
+  border-radius: 8px;
+  border: 1px solid black;
+}
+.blog .card-body{
+  width: 85%;
+  margin: 0 auto;
+  margin-top: -50px;
+  border-radius: 0 0 60px 0;
+  text-align: justify;
+}
+.blog h4{
+  font-size: 1.75rem;
+  font-weight: 900;
+}
+.blog .button{
+  background-color: var(--accents);
+  font-size: 1.2rem;
+  transition: var(--transition);
+  color: var(--white);
+}
+.blog .button:hover{
+  background-color: var(--primaryColor);
+  color: var(--white);
+}
+.blog .widget{
+  background-color: var(--secondaryColor);
+  border-radius: 60px 0 0 0;
+  padding: 40px;
+}
+.blog li{
+  list-style: none;
+  padding-top: 7px;
+}
+.blog .widget a{
+  color: var(--primaryColor);
+  transition: var(--transition);
+  text-decoration: none;
+}
+.blog .widget a:hover{
+  color: var(--white);
+}
+/* * * * * * * * * * * * * * * * * Responsive * * * * * * * * * * * * * * * * */
+@media(max-width: 768px){
+header{
+  padding-top: 0;
+  height: 80vh;
+}
+header .navHeight{
+  height: auto;
+}
+header button{
+  margin-left: 20px;
+}
+.tema .flex-column{
+ margin: 30px auto;
+}
+.blog .row{
+ flex-direction: column;
+ margin: 15px auto;
+}
+.blog .col-7{
+ max-width: none;
+}
+header h1{
+  font-size: 5rem;
+}
+.blog .col-4{
+ max-width: none;
+}
+ }
